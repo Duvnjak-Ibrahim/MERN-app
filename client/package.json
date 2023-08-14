@@ -2,6 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "proxy":"https://pure-gorge-14735-9cf967bed426.herokuapp.com/",
   "main": "index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "ibrahim",
   "license": "ISC",
@@ -20,6 +21,7 @@
     "i": "^0.3.7",
     "jsonwebtoken": "^9.0.1",
     "mongoose": "^7.4.1",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "path": "^0.12.7"
   }
 }
