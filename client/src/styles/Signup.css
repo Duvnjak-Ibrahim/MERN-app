@@ -1,0 +1,51 @@
+/* Signup.css*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+.main-container{
+  width: 100%;
+  height: 100vh;
+  background-size: cover; /* Make the image cover the div */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(to top left, 
+  #12c2e9 0%,    /* Start color at 0% */
+  #c471ed 50%,   /* Middle color at 50% */
+  #f64f59 100%   /* End color at 100% */
+);
+}
+
+.formThing{
+  background-color: rgba(255, 255, 255, 0.1);
+  padding:2em;
+  border-radius: 10%;
+}
+.formy1{
+  display: flex;
+  flex-direction: column;
+}
+input{
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin:5px 0;
+}
+
+.btn{
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.btn:hover{
+  background-color: #0056b3;
+
+}

@@ -1,0 +1,70 @@
+* {
+ 
+    box-sizing: border-box;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+ 
+  /* HOME PAGE CSS */
+  body,html{
+    margin: 0;
+    padding: 0; 
+    /* outline: none; */
+    /* overflow: none;c */
+  }
+  .home-container2 {
+    display: flex;
+    width: 100%; /* Full width of the container */
+    height: 100vh;
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    
+  }
+.left-section2{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background: linear-gradient(to top left, 
+    #12c2e9 0%,    /* Start color at 0% */
+    #c471ed 50%,   /* Middle color at 50% */
+    #f64f59 100%   /* End color at 100% */
+  );
+}
+.left-section2 form{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.15);
+
+}
+.formy2{
+    display: flex;
+    flex-direction: column;
+  }
+  input{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin:5px 0;
+  }
+  
+  .btn2{
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .btn2:hover{
+    background-color: #0056b3;
+  
+  }
+  
+  .postForm{
+    background-color: rgba(255, 255, 255, 0.05);
+    padding:2em;
+    border-radius: 10%;
+    position: fixed;
+  }
