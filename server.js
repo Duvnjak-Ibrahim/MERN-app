@@ -21,14 +21,14 @@ app.use(express.json())
 app.use("/api/posts",require("./routes/postRoutes"))
 app.use("/api/users",require("./routes/userRoutes"))
 
-if(process.env.NODE_ENV === "production"){
-    app.use(express.static("client/build"))
-    app.get("*",(req,res)=>{
-        res.sendFile(
-            path.resolve(_dirname,"client","build","index.html")
-            )
-    })
-}
+// if(process.env.NODE_ENV === "production"){
+//     app.use(express.static("client/build"))
+//     app.get("*",(req,res)=>{
+//         res.sendFile(
+//             path.resolve(_dirname,"client","build","index.html")
+//             )
+//     })
+// }
 
 app.listen(port, ()=>{
     console.log(`server on ${port}`);
