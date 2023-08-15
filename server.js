@@ -15,7 +15,7 @@ app.use(cors(
 }
 ))
 
-const port = process.env.PORT || 3001;
+
 
 app.use(express.json())
 app.use("/api/posts",require("./routes/postRoutes"))
@@ -30,6 +30,6 @@ if(process.env.NODE_ENV === "production"){
     })
 }
 
-app.listen(port, ()=>{
-    console.log(`server on ${port}`);
+app.listen(process.env.PORT || 3001, ()=>{
+    console.log(`server on ${process.env.PORT || 3001}`);
 })
